@@ -1,8 +1,10 @@
-var redis = require('redis');
-var client = redis.createClient();
-
-var client = new Server();
-
+var db          = require('mysql'); //This sets up the MySQL connection
+var db_pool     = db.createPool({
+  host        : 'localhost',
+  port        : '8889',
+  database    : 'node_js_sample',
+  user        : 'root',
+  password    : 'root'
 });
 
 exports.findById = function(req, res) {
@@ -12,7 +14,7 @@ exports.findById = function(req, res) {
 };
 
 exports.findAll = function(req, res) {
-    
+
 };
 
 exports.addUnicorn = function(req, res) {
