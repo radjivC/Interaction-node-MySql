@@ -1,6 +1,5 @@
-interactionNodeMySql
-====================
-
+Interaction MySql with node.js
+=====================================
 
 I'm building it...
 
